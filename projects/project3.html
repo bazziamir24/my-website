@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphs, But Smarter | Amir Bazzi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navigation bar -->
+    <header class="fixed top-0 inset-x-0 z-50 bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="../index.html" class="text-xl font-bold text-indigo-600">Amir&nbsp;Bazzi</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="../about.html" class="text-gray-600 hover:text-indigo-600">About</a>
+                    <a href="../work.html" class="text-gray-600 hover:text-indigo-600">Work</a>
+                    <a href="../blog.html" class="text-gray-600 hover:text-indigo-600">Blog</a>
+                    <a href="../contact.html" class="text-gray-600 hover:text-indigo-600">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero banner -->
+    <section class="relative pt-24 pb-32 bg-cover bg-center" style="background-image: url('../assets/blog.png');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative max-w-4xl mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Graphs, But Smarter</h1>
+            <p class="text-lg sm:text-xl max-w-3xl mx-auto">An article introducing Graph Neural Networks and exploring their
+                applications in modern machine learning.</p>
+        </div>
+    </section>
+
+    <!-- Article details -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6">Article Summary</h2>
+        <p class="text-lg leading-relaxed mb-4">
+            In this Medium article, I introduce the concept of <strong>Graph Neural Networks</strong> (GNNs) and discuss
+            why they are an important extension of deep learning for data that can be represented as graphs. From social
+            networks to molecular structures, many real‑world problems have relationships that cannot be captured by
+            traditional CNNs or RNNs.
+        </p>
+        <p class="text-lg leading-relaxed mb-4">
+            The article provides an accessible overview of how GNNs work, highlights some exciting applications,
+            and reflects on future directions of this rapidly growing field. It aims to inspire readers to explore
+            graph‑based models and understand their potential.
+        </p>
+        <h2 class="text-3xl font-semibold text-gray-800 mt-10 mb-6">Key Topics</h2>
+        <ul class="list-disc list-inside text-lg space-y-2">
+            <li>Fundamentals of Graph Neural Networks.</li>
+            <li>Examples of GNN applications in various domains.</li>
+            <li>Potential future research directions and challenges.</li>
+        </ul>
+        <div class="mt-10">
+            <a href="../work.html" class="text-indigo-600 font-semibold hover:underline">← Back to Work</a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2025 Amir Bazzi. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
