@@ -31,7 +31,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
               <img
-                src={assetPath('assets/profile.png')}
+                src={assetPath('assets/profile.jpg')}
                 alt="Portrait of Amir Bazzi"
                 loading="lazy"
                 className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-indigo-600 shadow-md"
@@ -154,10 +154,12 @@ export default function Home() {
           <div className="space-y-12">
             {/* Newest blog post */}
             <article className="flex flex-col sm:flex-row items-start">
-              <div
-                className="flex-shrink-0 w-full sm:w-64 h-40 bg-cover bg-center rounded-lg mb-4 sm:mb-0 sm:mr-6"
-                style={{ backgroundImage: `url(${assetPath('assets/blog.png')})` }}
-              ></div>
+              <img
+                src={assetPath('assets/blog.png')}
+                alt=""
+                loading="lazy"
+                className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
+              />
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                   <Link to="/blog/blog1" className="hover:text-indigo-600">
@@ -178,10 +180,12 @@ export default function Home() {
             </article>
             {/* Second blog post */}
             <article className="flex flex-col sm:flex-row items-start">
-              <div
-                className="flex-shrink-0 w-full sm:w-64 h-40 bg-cover bg-center rounded-lg mb-4 sm:mb-0 sm:mr-6"
-                style={{ backgroundImage: `url(${assetPath('assets/hero.png')})` }}
-              ></div>
+              <img
+                src={assetPath('assets/hero.png')}
+                alt=""
+                loading="lazy"
+                className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
+              />
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                   <Link to="/blog/blog2" className="hover:text-indigo-600">

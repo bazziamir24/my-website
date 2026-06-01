@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { assetPath } from '../../lib/assets';
+import HeroSection from '../../components/HeroSection';
 
 /**
  * Project page: Associate Researcher.
@@ -13,19 +13,12 @@ export default function Project2() {
   return (
     <>
       {/* Hero banner */}
-      <section
-        className="relative pt-24 pb-32 bg-cover bg-center"
-        style={{ backgroundImage: `url(${assetPath('assets/work.png')})` }}
-      >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">Associate Researcher</h1>
-          <p className="text-lg sm:text-xl max-w-3xl mx-auto">
-            Internship at Pierre and Marie Curie University focused on
-            reinforcement learning using the Gymnasium library.
-          </p>
-        </div>
-      </section>
+      <HeroSection image="assets/work.png" title="Associate Researcher">
+        <p className="text-lg sm:text-xl max-w-3xl mx-auto">
+          Internship at Pierre and Marie Curie University focused on
+          reinforcement learning using the Gymnasium library.
+        </p>
+      </HeroSection>
       {/* Project details */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white">
         <h2 className="text-3xl font-semibold text-gray-800 mb-6">Internship Overview</h2>

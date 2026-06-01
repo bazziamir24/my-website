@@ -23,7 +23,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
               <img
-                src={assetPath('assets/profile.png')}
+                src={assetPath('assets/profile.jpg')}
                 alt="Portrait of Amir Bazzi"
                 loading="lazy"
                 className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover ring-2 ring-white border-4 border-indigo-600 shadow-md"

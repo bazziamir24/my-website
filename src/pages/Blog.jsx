@@ -27,10 +27,12 @@ export default function Blog() {
           <div className="space-y-12">
             {/* Post 1 */}
             <article className="flex flex-col sm:flex-row items-start">
-              <div
-                className="flex-shrink-0 w-full sm:w-64 h-40 bg-cover bg-center rounded-lg mb-4 sm:mb-0 sm:mr-6"
-                style={{ backgroundImage: `url(${assetPath('assets/blog.png')})` }}
-              ></div>
+              <img
+                src={assetPath('assets/blog.png')}
+                alt=""
+                loading="lazy"
+                className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
+              />
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                   <Link to="/blog/blog1" className="hover:text-indigo-600">
@@ -49,10 +51,12 @@ export default function Blog() {
             </article>
             {/* Post 2 */}
             <article className="flex flex-col sm:flex-row items-start">
-              <div
-                className="flex-shrink-0 w-full sm:w-64 h-40 bg-cover bg-center rounded-lg mb-4 sm:mb-0 sm:mr-6"
-                style={{ backgroundImage: `url(${assetPath('assets/hero.png')})` }}
-              ></div>
+              <img
+                src={assetPath('assets/hero.png')}
+                alt=""
+                loading="lazy"
+                className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
+              />
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                   <Link to="/blog/blog2" className="hover:text-indigo-600">
@@ -71,10 +75,12 @@ export default function Blog() {
             </article>
             {/* Post 3 */}
             <article className="flex flex-col sm:flex-row items-start">
-              <div
-                className="flex-shrink-0 w-full sm:w-64 h-40 bg-cover bg-center rounded-lg mb-4 sm:mb-0 sm:mr-6"
-                style={{ backgroundImage: `url(${assetPath('assets/medium/hero_gnn.webp')})` }}
-              ></div>
+              <img
+                src={assetPath('assets/medium/hero_gnn.webp')}
+                alt=""
+                loading="lazy"
+                className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
+              />
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                   <Link to="/blog/gnn-article" className="hover:text-indigo-600">
