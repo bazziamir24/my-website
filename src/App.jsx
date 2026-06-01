@@ -1,12 +1,12 @@
   import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import N'./components/Nav.jsx';
+import Nav from './components/Nav.jsx';
 
 // Import pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
-import Publications from './pages/Publications';
+import Publications from './pages/Publications.jsx';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Blog1 from './pages/blog/Blog1';
