@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HeroSection from '../components/HeroSection';
 import { assetPath } from '../lib/assets';
 
 /**
@@ -12,20 +13,11 @@ export default function Blog() {
   return (
     <>
       {/* Hero section */}
-      <section
-        className="relative pt-24 pb-32 bg-cover bg-center"
-        style={{ backgroundImage: `url(${assetPath('assets/hero.png')})` }}
-      >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-            My Blog
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto">
-            Insights, reflections, and notes on AI, research and beyond.
-          </p>
-        </div>
-      </section>
+      <HeroSection image="assets/hero.png" title="My Blog">
+        <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto">
+          Insights, reflections, and notes on AI, research and beyond.
+        </p>
+      </HeroSection>
       {/* Posts list */}
       <main className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
