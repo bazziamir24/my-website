@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { assetPath } from '../lib/assets';
 
 /**
  * Work page component.
@@ -13,7 +14,7 @@ export default function Work() {
       {/* Hero section */}
       <section
         className="relative pt-24 pb-32 bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/hero.png')" }}
+        style={{ backgroundImage: `url(${assetPath('assets/hero.png')})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
@@ -37,7 +38,7 @@ export default function Work() {
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
               <Link to="/projects/project1" className="block">
                 <img
-                  src="/assets/hero.png"
+                  src={assetPath('assets/hero.png')}
                   alt="PhD Student (CIFRE)"
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
@@ -58,7 +59,7 @@ export default function Work() {
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
               <Link to="/projects/project2" className="block">
                 <img
-                  src="/assets/work.png"
+                  src={assetPath('assets/work.png')}
                   alt="Associate Researcher"
                   className="w-full h-48 object-cover rounded-t-lg"
                 />

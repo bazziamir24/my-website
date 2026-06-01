@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { assetPath } from '../../lib/assets';
 
 /**
  * Blog post: Graphs, But Smarter – The Rise of Graph Neural Networks.
@@ -14,7 +15,7 @@ export default function GnnArticle() {
       {/* Hero */}
       <section
         className="relative pt-24 pb-20 bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/medium/hero_gnn.webp')" }}
+        style={{ backgroundImage: `url(${assetPath('assets/medium/hero_gnn.webp')})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-3xl mx-auto px-4 text-center text-white">

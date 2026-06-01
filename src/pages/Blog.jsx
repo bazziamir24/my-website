@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { assetPath } from '../lib/assets';
 
 /**
  * Blog listing page.
@@ -13,7 +14,7 @@ export default function Blog() {
       {/* Hero section */}
       <section
         className="relative pt-24 pb-32 bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/hero.png')" }}
+        style={{ backgroundImage: `url(${assetPath('assets/hero.png')})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
@@ -36,7 +37,7 @@ export default function Blog() {
             <article className="flex flex-col sm:flex-row items-start">
               <div
                 className="flex-shrink-0 w-full sm:w-64 h-40 bg-cover bg-center rounded-lg mb-4 sm:mb-0 sm:mr-6"
-                style={{ backgroundImage: "url('/assets/blog.png')" }}
+                style={{ backgroundImage: `url(${assetPath('assets/blog.png')})` }}
               ></div>
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">
@@ -58,7 +59,7 @@ export default function Blog() {
             <article className="flex flex-col sm:flex-row items-start">
               <div
                 className="flex-shrink-0 w-full sm:w-64 h-40 bg-cover bg-center rounded-lg mb-4 sm:mb-0 sm:mr-6"
-                style={{ backgroundImage: "url('/assets/hero.png')" }}
+                style={{ backgroundImage: `url(${assetPath('assets/hero.png')})` }}
               ></div>
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">
@@ -80,7 +81,7 @@ export default function Blog() {
             <article className="flex flex-col sm:flex-row items-start">
               <div
                 className="flex-shrink-0 w-full sm:w-64 h-40 bg-cover bg-center rounded-lg mb-4 sm:mb-0 sm:mr-6"
-                style={{ backgroundImage: "url('/assets/medium/hero_gnn.webp')" }}
+                style={{ backgroundImage: `url(${assetPath('assets/medium/hero_gnn.webp')})` }}
               ></div>
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { assetPath } from '../lib/assets';
 
 /**
  * About page component.
@@ -12,7 +13,7 @@ export default function About() {
       {/* Hero section */}
       <section
         className="relative pt-24 pb-32 bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/hero.png')" }}
+        style={{ backgroundImage: `url(${assetPath('assets/hero.png')})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
@@ -30,7 +31,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
               <img
-                src="/assets/profile.png"
+                src={assetPath('assets/profile.png')}
                 alt="Portrait of Amir Bazzi"
                 loading="lazy"
                 className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover ring-2 ring-white border-4 border-indigo-600 shadow-md"

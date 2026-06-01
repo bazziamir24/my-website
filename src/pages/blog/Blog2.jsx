@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { assetPath } from '../../lib/assets';
 
 /**
  * Blog post: Another Blog Post.
@@ -10,7 +11,7 @@ export default function Blog2() {
       {/* Hero */}
       <section
         className="relative pt-24 pb-20 bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/hero.png')" }}
+        style={{ backgroundImage: `url(${assetPath('assets/hero.png')})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-3xl mx-auto px-4 text-center text-white">

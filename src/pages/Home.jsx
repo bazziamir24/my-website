@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { assetPath } from '../lib/assets';
 
 /**
  * Home page component.
@@ -15,7 +16,7 @@ export default function Home() {
       {/* Hero section */}
       <section
         className="relative pt-24 pb-32 bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/hero.png')" }}
+        style={{ backgroundImage: `url(${assetPath('assets/hero.png')})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
@@ -38,7 +39,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
               <img
-                src="/assets/profile.png"
+                src={assetPath('assets/profile.png')}
                 alt="Portrait of Amir Bazzi"
                 loading="lazy"
                 className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-indigo-600 shadow-md"
@@ -111,7 +112,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
               <Link to="/projects/project1" className="block">
                 <img
-                  src="/assets/hero.png"
+                  src={assetPath('assets/hero.png')}
                   alt="PhD Student (CIFRE)"
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
@@ -132,7 +133,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
               <Link to="/projects/project2" className="block">
                 <img
-                  src="/assets/work.png"
+                  src={assetPath('assets/work.png')}
                   alt="Associate Researcher"
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
@@ -163,7 +164,7 @@ export default function Home() {
             <article className="flex flex-col sm:flex-row items-start">
               <div
                 className="flex-shrink-0 w-full sm:w-64 h-40 bg-cover bg-center rounded-lg mb-4 sm:mb-0 sm:mr-6"
-                style={{ backgroundImage: "url('/assets/blog.png')" }}
+                style={{ backgroundImage: `url(${assetPath('assets/blog.png')})` }}
               ></div>
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">
@@ -187,7 +188,7 @@ export default function Home() {
             <article className="flex flex-col sm:flex-row items-start">
               <div
                 className="flex-shrink-0 w-full sm:w-64 h-40 bg-cover bg-center rounded-lg mb-4 sm:mb-0 sm:mr-6"
-                style={{ backgroundImage: "url('/assets/hero.png')" }}
+                style={{ backgroundImage: `url(${assetPath('assets/hero.png')})` }}
               ></div>
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">

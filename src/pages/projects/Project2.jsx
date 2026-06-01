@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { assetPath } from '../../lib/assets';
 
 /**
  * Project page: Associate Researcher.
@@ -14,7 +15,7 @@ export default function Project2() {
       {/* Hero banner */}
       <section
         className="relative pt-24 pb-32 bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/work.png')" }}
+        style={{ backgroundImage: `url(${assetPath('assets/work.png')})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-4xl mx-auto px-4 text-center text-white">

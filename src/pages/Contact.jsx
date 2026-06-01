@@ -1,4 +1,5 @@
 import React from 'react';
+import { assetPath } from '../lib/assets';
 
 /**
  * Contact page component.
@@ -13,7 +14,7 @@ export default function Contact() {
       {/* Hero section */}
       <section
         className="relative pt-24 pb-32 bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/hero.png')" }}
+        style={{ backgroundImage: `url(${assetPath('assets/hero.png')})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
