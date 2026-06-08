@@ -141,6 +141,27 @@ export default function Home() {
                 </div>
               </Link>
             </div>
+            {/* Project 3 card */}
+            <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+              <Link to="/projects/metalore" className="block">
+                <img
+                  src={assetPath('assets/work.png')}
+                  alt="MetaLore reinforcement learning project"
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                    MetaLore
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Deep reinforcement learning with PPO for dynamic resource
+                    allocation in mobile edge networks and digital twin
+                    synchronization.
+                  </p>
+                  <span className="text-indigo-600 font-semibold">Read more -&gt;</span>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -155,50 +176,24 @@ export default function Home() {
             {/* Newest blog post */}
             <article className="flex flex-col sm:flex-row items-start">
               <img
-                src={assetPath('assets/blog.png')}
+                src={assetPath('assets/medium/hero_gnn.webp')}
                 alt=""
                 loading="lazy"
                 className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
               />
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                  <Link to="/blog/blog1" className="hover:text-indigo-600">
-                    My First Blog Post
+                  <Link to="/blog/gnn-article" className="hover:text-indigo-600">
+                    Graphs, But Smarter: The Rise of Graph Neural Networks
                   </Link>
                 </h3>
-                <p className="text-sm text-gray-500 mb-3">
-                  September 1, 2025
-                </p>
+                <p className="text-sm text-gray-500 mb-3">April 24, 2025</p>
                 <p className="text-gray-700 mb-2">
-                  An introduction to my blog, where I share the purpose of this
-                  site and what to expect from future posts.
+                  Exploring what graph neural networks are, how they work, and
+                  why they matter for AI and physics simulations.
                 </p>
-                <Link to="/blog/blog1" className="text-indigo-600 font-semibold">
-                  Read more →
-                </Link>
-              </div>
-            </article>
-            {/* Second blog post */}
-            <article className="flex flex-col sm:flex-row items-start">
-              <img
-                src={assetPath('assets/hero.png')}
-                alt=""
-                loading="lazy"
-                className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                  <Link to="/blog/blog2" className="hover:text-indigo-600">
-                    Another Blog Post
-                  </Link>
-                </h3>
-                <p className="text-sm text-gray-500 mb-3">August 20, 2025</p>
-                <p className="text-gray-700 mb-2">
-                  Sharing tips for staying productive and creative. Discover my
-                  methods for keeping ideas flowing.
-                </p>
-                <Link to="/blog/blog2" className="text-indigo-600 font-semibold">
-                  Read more →
+                <Link to="/blog/gnn-article" className="text-indigo-600 font-semibold">
+                  Read more -&gt;
                 </Link>
               </div>
             </article>

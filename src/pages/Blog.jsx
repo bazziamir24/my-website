@@ -6,7 +6,7 @@ import { assetPath } from '../lib/assets';
 /**
  * Blog listing page.
  *
- * Displays all blog posts in reverse chronological order.  Each post is
+ * Displays all blog posts in reverse chronological order. Each post is
  * represented with its own card containing a title, date, summary and link.
  */
 export default function Blog() {
@@ -18,6 +18,7 @@ export default function Blog() {
           Insights, reflections, and notes on AI, research and beyond.
         </p>
       </HeroSection>
+
       {/* Posts list */}
       <main className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,54 +27,6 @@ export default function Blog() {
           </h2>
           <div className="space-y-12">
             {/* Post 1 */}
-            <article className="flex flex-col sm:flex-row items-start">
-              <img
-                src={assetPath('assets/blog.png')}
-                alt=""
-                loading="lazy"
-                className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                  <Link to="/blog/blog1" className="hover:text-indigo-600">
-                    My First Blog Post
-                  </Link>
-                </h3>
-                <p className="text-sm text-gray-500 mb-3">September 1, 2025</p>
-                <p className="text-gray-700 mb-2">
-                  An introduction to my blog, where I share the purpose of
-                  this site and what to expect from future posts.
-                </p>
-                <Link to="/blog/blog1" className="text-indigo-600 font-semibold">
-                  Read more →
-                </Link>
-              </div>
-            </article>
-            {/* Post 2 */}
-            <article className="flex flex-col sm:flex-row items-start">
-              <img
-                src={assetPath('assets/hero.png')}
-                alt=""
-                loading="lazy"
-                className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                  <Link to="/blog/blog2" className="hover:text-indigo-600">
-                    Another Blog Post
-                  </Link>
-                </h3>
-                <p className="text-sm text-gray-500 mb-3">August 20, 2025</p>
-                <p className="text-gray-700 mb-2">
-                  Sharing tips for staying productive and creative. Discover my
-                  methods for keeping ideas flowing.
-                </p>
-                <Link to="/blog/blog2" className="text-indigo-600 font-semibold">
-                  Read more →
-                </Link>
-              </div>
-            </article>
-            {/* Post 3 */}
             <article className="flex flex-col sm:flex-row items-start">
               <img
                 src={assetPath('assets/medium/hero_gnn.webp')}
@@ -87,13 +40,13 @@ export default function Blog() {
                     Graphs, But Smarter: The Rise of Graph Neural Networks
                   </Link>
                 </h3>
-                <p className="text-sm text-gray-500 mb-3">April 24, 2025</p>
+                <p className="text-sm text-gray-500 mb-3">April 24, 2025</p>
                 <p className="text-gray-700 mb-2">
                   Exploring what graph neural networks are, how they work, and
                   why they matter for AI and physics simulations.
                 </p>
                 <Link to="/blog/gnn-article" className="text-indigo-600 font-semibold">
-                  Read more →
+                  Read more -&gt;
                 </Link>
               </div>
             </article>

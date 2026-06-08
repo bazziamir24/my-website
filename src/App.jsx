@@ -9,11 +9,10 @@ import Work from './pages/Work';
 import Publications from './pages/Publications.jsx';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
-import Blog1 from './pages/blog/Blog1';
-import Blog2 from './pages/blog/Blog2';
 import GnnArticle from './pages/blog/GnnArticle';
 import Project1 from './pages/projects/Project1';
 import Project2 from './pages/projects/Project2';
+import Project3 from './pages/projects/Project3';
 
 /**
  * Top level application component.
@@ -33,12 +32,11 @@ export default function App() {
         <Route path="/publications" element={<Publications />} />
         <Route path="/blog" element={<Blog />} />
         {/* Individual blog posts */}
-        <Route path="/blog/blog1" element={<Blog1 />} />
-        <Route path="/blog/blog2" element={<Blog2 />} />
         <Route path="/blog/gnn-article" element={<GnnArticle />} />
         {/* Projects */}
         <Route path="/projects/project1" element={<Project1 />} />
         <Route path="/projects/project2" element={<Project2 />} />
+        <Route path="/projects/metalore" element={<Project3 />} />
         {/* Contact page */}
         <Route path="/contact" element={<Contact />} />
       </Routes>

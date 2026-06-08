@@ -67,6 +67,27 @@ export default function Work() {
                 </div>
               </Link>
             </div>
+            {/* Project 3 */}
+            <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+              <Link to="/projects/metalore" className="block">
+                <img
+                  src={assetPath('assets/work.png')}
+                  alt="MetaLore reinforcement learning project"
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                    MetaLore
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Deep reinforcement learning with PPO for dynamic resource
+                    allocation in mobile edge networks and digital twin
+                    synchronization.
+                  </p>
+                  <span className="text-indigo-600 font-semibold">Read more -&gt;</span>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </main>
