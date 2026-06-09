@@ -14,6 +14,7 @@ import InformationTheoryProject from './pages/blog/InformationTheoryProject';
 import Project1 from './pages/projects/Project1';
 import Project2 from './pages/projects/Project2';
 import Project3 from './pages/projects/Project3';
+import Project4 from './pages/projects/Project4';
 
 /**
  * Top level application component.
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="/projects/project1" element={<Project1 />} />
         <Route path="/projects/project2" element={<Project2 />} />
         <Route path="/projects/metalore" element={<Project3 />} />
+        <Route path="/projects/gaussian-database-alignment" element={<Project4 />} />
         {/* Contact page */}
         <Route path="/contact" element={<Contact />} />
       </Routes>

@@ -88,6 +88,26 @@ export default function Work() {
                 </div>
               </Link>
             </div>
+            {/* Project 4 */}
+            <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+              <Link to="/projects/gaussian-database-alignment" className="block">
+                <img
+                  src={assetPath('assets/tamir_paper.png')}
+                  alt="Gaussian database alignment project"
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                    Gaussian Database Alignment
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Information theory school project on correlation detection
+                    and alignment recovery under hidden row permutations.
+                  </p>
+                  <span className="text-indigo-600 font-semibold">Read more -&gt;</span>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </main>
