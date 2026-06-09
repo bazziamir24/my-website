@@ -29,6 +29,31 @@ export default function Blog() {
             {/* Post 1 */}
             <article className="flex flex-col sm:flex-row items-start gap-6">
               <img
+                src={assetPath('assets/01_runtime_distribution.png')}
+                alt=""
+                loading="lazy"
+                className="flex-shrink-0 w-full sm:w-72 h-44 object-cover rounded-lg"
+              />
+              <div>
+                <h3 className="text-3xl sm:text-4xl font-extrabold leading-tight text-gray-900 mb-3">
+                  <Link to="/blog/small-rl-project" className="hover:text-indigo-600">
+                    A Small Reinforcement Learning Project
+                  </Link>
+                </h3>
+                <p className="text-sm font-medium text-gray-500 mb-4">June 9, 2026</p>
+                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                  A small side project where I used a multi-armed bandit idea
+                  to think about scheduling expensive FORGE simulations while
+                  refreshing my reinforcement learning intuition.
+                </p>
+                <Link to="/blog/small-rl-project" className="text-indigo-600 font-semibold">
+                  Read more -&gt;
+                </Link>
+              </div>
+            </article>
+            {/* Post 2 */}
+            <article className="flex flex-col sm:flex-row items-start gap-6">
+              <img
                 src={assetPath('assets/medium/hero_gnn.webp')}
                 alt=""
                 loading="lazy"
@@ -50,7 +75,7 @@ export default function Blog() {
                 </Link>
               </div>
             </article>
-            {/* Post 2 */}
+            {/* Post 3 */}
             <article className="flex flex-col sm:flex-row items-start gap-6">
               <img
                 src={assetPath('assets/tamir_paper.png')}

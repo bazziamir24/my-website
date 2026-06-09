@@ -237,6 +237,30 @@ export default function Home() {
             Latest Posts
           </h2>
           <div className="space-y-12">
+            {/* Small RL blog post */}
+            <article className="flex flex-col sm:flex-row items-start">
+              <img
+                src={assetPath('assets/01_runtime_distribution.png')}
+                alt=""
+                loading="lazy"
+                className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
+              />
+              <div>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                  <Link to="/blog/small-rl-project" className="hover:text-indigo-600">
+                    A Small Reinforcement Learning Project
+                  </Link>
+                </h3>
+                <p className="text-sm text-gray-500 mb-3">June 9, 2026</p>
+                <p className="text-gray-700 mb-2">
+                  A small side project using a multi-armed bandit idea to think
+                  about scheduling expensive FORGE simulations.
+                </p>
+                <Link to="/blog/small-rl-project" className="text-indigo-600 font-semibold">
+                  Read more -&gt;
+                </Link>
+              </div>
+            </article>
             {/* GNN blog post */}
             <article className="flex flex-col sm:flex-row items-start">
               <img
@@ -257,31 +281,6 @@ export default function Home() {
                   why they matter for AI and physics simulations.
                 </p>
                 <Link to="/blog/gnn-article" className="text-indigo-600 font-semibold">
-                  Read more -&gt;
-                </Link>
-              </div>
-            </article>
-            {/* Information theory blog post */}
-            <article className="flex flex-col sm:flex-row items-start">
-              <img
-                src={assetPath('assets/tamir_paper.png')}
-                alt=""
-                loading="lazy"
-                className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                  <Link to="/blog/information-theory-project" className="hover:text-indigo-600">
-                    Correlation Detection and Alignment Recovery in Gaussian Databases
-                  </Link>
-                </h3>
-                <p className="text-sm text-gray-500 mb-3">April 4, 2024</p>
-                <p className="text-gray-700 mb-2">
-                  School project with Sarah Sayed implementing ideas from Ran
-                  Tamir's work on correlation detection and hidden alignment
-                  recovery in Gaussian databases.
-                </p>
-                <Link to="/blog/information-theory-project" className="text-indigo-600 font-semibold">
                   Read more -&gt;
                 </Link>
               </div>

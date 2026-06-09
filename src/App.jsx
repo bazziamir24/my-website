@@ -11,6 +11,7 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import GnnArticle from './pages/blog/GnnArticle';
 import InformationTheoryProject from './pages/blog/InformationTheoryProject';
+import SmallRlProject from './pages/blog/SmallRlProject';
 import Project1 from './pages/projects/Project1';
 import Project2 from './pages/projects/Project2';
 import Project3 from './pages/projects/Project3';
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="/publications" element={<Publications />} />
         <Route path="/blog" element={<Blog />} />
         {/* Individual blog posts */}
+        <Route path="/blog/small-rl-project" element={<SmallRlProject />} />
         <Route path="/blog/information-theory-project" element={<InformationTheoryProject />} />
         <Route path="/blog/gnn-article" element={<GnnArticle />} />
         {/* Projects */}
