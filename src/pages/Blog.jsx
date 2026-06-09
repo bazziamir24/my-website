@@ -20,28 +20,28 @@ export default function Blog() {
       </HeroSection>
 
       {/* Posts list */}
-      <main className="py-16 bg-white">
+      <main className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-10">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-12">
             All Posts
           </h2>
-          <div className="space-y-12">
+          <div className="space-y-14">
             {/* Post 1 */}
-            <article className="flex flex-col sm:flex-row items-start">
+            <article className="flex flex-col sm:flex-row items-start gap-6">
               <img
                 src={assetPath('assets/medium/hero_gnn.webp')}
                 alt=""
                 loading="lazy"
-                className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"
+                className="flex-shrink-0 w-full sm:w-72 h-44 object-cover rounded-lg"
               />
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                <h3 className="text-3xl sm:text-4xl font-extrabold leading-tight text-gray-900 mb-3">
                   <Link to="/blog/gnn-article" className="hover:text-indigo-600">
                     Graphs, But Smarter: The Rise of Graph Neural Networks
                   </Link>
                 </h3>
-                <p className="text-sm text-gray-500 mb-3">April 24, 2025</p>
-                <p className="text-gray-700 mb-2">
+                <p className="text-sm font-medium text-gray-500 mb-4">April 24, 2025</p>
+                <p className="text-lg leading-relaxed text-gray-700 mb-4">
                   Exploring what graph neural networks are, how they work, and
                   why they matter for AI and physics simulations.
                 </p>

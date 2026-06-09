@@ -166,8 +166,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Publications section */}
+      <section id="publications" className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8">
+            Publications
+          </h2>
+          <article className="bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 p-6">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              Physics-Informed Coarsening for Multigrid Graph Neural Surrogates
+            </h3>
+            <p className="text-gray-600 text-sm mb-4">
+              Amir Bazzi, Ramy Nemer, Jose Alves, Elie Hachem - ICML 2026
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              A multigrid graph neural network for solid mechanics that uses
+              physics-informed coarsening to focus model capacity on regions of
+              high strain or stress concentration.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://sites.google.com/view/physics-informed-coarsening"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 font-semibold hover:underline"
+              >
+                Read the full paper -&gt;
+              </a>
+              <Link to="/publications" className="text-gray-600 font-semibold hover:text-indigo-600">
+                View publications -&gt;
+              </Link>
+            </div>
+          </article>
+        </div>
+      </section>
+
       {/* Blog section */}
-      <section id="blog" className="py-16 bg-white">
+      <section id="blog" className="py-16 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8">
             Latest Posts

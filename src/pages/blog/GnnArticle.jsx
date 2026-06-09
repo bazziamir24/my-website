@@ -5,14 +5,14 @@ import { assetPath } from '../../lib/assets';
 
 function Figure({ src, alt, caption }) {
   return (
-    <figure className="my-8">
+    <figure className="my-10">
       <img
         src={assetPath(src)}
         alt={alt}
         loading="lazy"
         className="w-full rounded-xl shadow-sm ring-1 ring-gray-200"
       />
-      <figcaption className="mt-3 text-center text-sm text-gray-500">
+      <figcaption className="mt-4 text-center text-sm text-gray-500">
         {caption}
       </figcaption>
     </figure>
@@ -35,9 +35,11 @@ export default function GnnArticle() {
       </HeroSection>
 
       {/* Article */}
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white prose prose-indigo prose-lg">
-        <h2>Introduction</h2>
-        <p>
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white text-gray-800">
+        <h2 className="mt-0 mb-6 text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+          Introduction
+        </h2>
+        <p className="text-xl leading-9 mb-6">
           Neural networks take inspiration from the human brain: neurons
           connected and communicating to process information. Most deep
           learning models assume data lives on regular grids, like images, or
@@ -45,7 +47,7 @@ export default function GnnArticle() {
           molecules, social networks, transportation routes, meshes, and
           physical simulations are more naturally represented as graphs.
         </p>
-        <p>
+        <p className="text-xl leading-9 mb-10">
           Graph Neural Networks extend neural learning to these irregular
           relational structures. Instead of learning only from individual data
           points, GNNs learn from the connections between them, which makes them
@@ -53,29 +55,33 @@ export default function GnnArticle() {
           physical systems.
         </p>
 
-        <h2>What is a Graph, Really?</h2>
-        <p>
+        <h2 className="mt-16 mb-6 text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+          What is a Graph, Really?
+        </h2>
+        <p className="text-xl leading-9 mb-6">
           A graph is a collection of nodes, also called vertices, and edges
           connecting pairs of nodes. We denote it as G=(V,E), where V is the set
           of nodes and E is the set of edges. These edges represent
           relationships between the nodes.
         </p>
-        <p>
+        <p className="text-xl leading-9 mb-10">
           Graphs can also be attributed, meaning that nodes and edges carry
           feature vectors. A node might represent an atom, a person, or a point
           in a simulation. An edge might encode a bond, a friendship, a
           distance, or a physical interaction.
         </p>
 
-        <h2>What Makes GNNs Different?</h2>
-        <p>
+        <h2 className="mt-16 mb-6 text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+          What Makes GNNs Different?
+        </h2>
+        <p className="text-xl leading-9 mb-6">
           Traditional neural networks, such as CNNs or RNNs, operate on regular
           domains like grids or sequences. Their success relies on inductive
           biases that match those data formats. Convolutional networks, for
           example, use translation equivariance to recognize image patterns
           regardless of where they appear.
         </p>
-        <p>
+        <p className="text-xl leading-9 mb-6">
           Graph data requires a different bias. A graph should not change just
           because we reorder its node labels. This leads to permutation
           invariance for graph-level predictions and permutation equivariance
@@ -87,15 +93,17 @@ export default function GnnArticle() {
           caption="Permutation equivariance: reordering inputs reorders outputs the same way."
         />
 
-        <h2>How to Choose Your GNN?</h2>
-        <p>
+        <h2 className="mt-16 mb-6 text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+          How to Choose Your GNN?
+        </h2>
+        <p className="text-xl leading-9 mb-6">
           A central question is how expressive a GNN architecture is. In graph
           learning, expressive power means the ability to distinguish different
           graph structures. Message-passing GNNs update each node by aggregating
           information from its neighbors, but not every aggregation function is
           equally informative.
         </p>
-        <p>
+        <p className="text-xl leading-9 mb-6">
           Neighborhood aggregation can be seen as a function over a multiset,
           since repeated node features can appear in a neighborhood. For a GNN
           to distinguish different neighborhoods, the aggregation function
@@ -113,8 +121,10 @@ export default function GnnArticle() {
           caption="Two different neighborhoods producing the same output under a non-injective aggregation."
         />
 
-        <h2>Okay, Then What is the Best Aggregator?</h2>
-        <p>
+        <h2 className="mt-16 mb-6 text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+          Okay, Then What is the Best Aggregator?
+        </h2>
+        <p className="text-xl leading-9 mb-6">
           A key result from Xu et al. is that sum aggregation can make
           message-passing GNNs maximally expressive over multisets when paired
           with suitable learnable transformations. This insight is the
@@ -125,7 +135,7 @@ export default function GnnArticle() {
           alt="Injective versus non-injective mapping"
           caption="Only injective mappings uniquely identify inputs."
         />
-        <p>
+        <p className="text-xl leading-9 mb-6">
           Even expressive message-passing models can have limits, especially
           when graphs require structural or positional awareness. Structure-aware
           GNNs add features such as cycle counts or centralities, while
@@ -142,8 +152,10 @@ export default function GnnArticle() {
           caption="Distinct subtrees map to distinct points in latent space."
         />
 
-        <h2>Wrapping Up</h2>
-        <p>
+        <h2 className="mt-16 mb-6 text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+          Wrapping Up
+        </h2>
+        <p className="text-xl leading-9 mb-10">
           Among message-passing GNNs, sum-based GINs are highly expressive for
           distinguishing neighborhood structures, but model choice still depends
           on the task. GATs can help when edge weighting matters, GCNs remain
@@ -151,8 +163,10 @@ export default function GnnArticle() {
           can improve performance when topology carries important information.
         </p>
 
-        <h2>References</h2>
-        <ul>
+        <h2 className="mt-16 mb-6 text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+          References
+        </h2>
+        <ul className="list-disc pl-6 text-lg leading-8 space-y-2">
           <li>Kipf &amp; Welling (2017) - <em>Semi-Supervised Classification with Graph Convolutional Networks</em>.</li>
           <li>Hamilton et al. (2017) - <em>Inductive Representation Learning on Large Graphs</em>.</li>
           <li>Velickovic et al. (2018) - <em>Graph Attention Networks</em>.</li>
