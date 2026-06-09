@@ -29,6 +29,30 @@ export default function Blog() {
             {/* Post 1 */}
             <article className="flex flex-col sm:flex-row items-start gap-6">
               <img
+                src={assetPath('assets/medium/hero_gnn.webp')}
+                alt=""
+                loading="lazy"
+                className="flex-shrink-0 w-full sm:w-72 h-44 object-cover rounded-lg"
+              />
+              <div>
+                <h3 className="text-3xl sm:text-4xl font-extrabold leading-tight text-gray-900 mb-3">
+                  <Link to="/blog/gnn-article" className="hover:text-indigo-600">
+                    Graphs, But Smarter: The Rise of Graph Neural Networks
+                  </Link>
+                </h3>
+                <p className="text-sm font-medium text-gray-500 mb-4">April 24, 2025</p>
+                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                  Exploring what graph neural networks are, how they work, and
+                  why they matter for AI and physics simulations.
+                </p>
+                <Link to="/blog/gnn-article" className="text-indigo-600 font-semibold">
+                  Read more -&gt;
+                </Link>
+              </div>
+            </article>
+            {/* Post 2 */}
+            <article className="flex flex-col sm:flex-row items-start gap-6">
+              <img
                 src={assetPath('assets/tamir_paper.png')}
                 alt=""
                 loading="lazy"
@@ -47,30 +71,6 @@ export default function Blog() {
                   alignments between Gaussian databases.
                 </p>
                 <Link to="/blog/information-theory-project" className="text-indigo-600 font-semibold">
-                  Read more -&gt;
-                </Link>
-              </div>
-            </article>
-            {/* Post 2 */}
-            <article className="flex flex-col sm:flex-row items-start gap-6">
-              <img
-                src={assetPath('assets/medium/hero_gnn.webp')}
-                alt=""
-                loading="lazy"
-                className="flex-shrink-0 w-full sm:w-72 h-44 object-cover rounded-lg"
-              />
-              <div>
-                <h3 className="text-3xl sm:text-4xl font-extrabold leading-tight text-gray-900 mb-3">
-                  <Link to="/blog/gnn-article" className="hover:text-indigo-600">
-                    Graphs, But Smarter: The Rise of Graph Neural Networks
-                  </Link>
-                </h3>
-                <p className="text-sm font-medium text-gray-500 mb-4">April 24, 2025</p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
-                  Exploring what graph neural networks are, how they work, and
-                  why they matter for AI and physics simulations.
-                </p>
-                <Link to="/blog/gnn-article" className="text-indigo-600 font-semibold">
                   Read more -&gt;
                 </Link>
               </div>
