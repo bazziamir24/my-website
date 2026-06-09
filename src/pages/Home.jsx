@@ -183,8 +183,9 @@ export default function Home() {
                     Gaussian Database Alignment
                   </h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    Information theory school project on correlation detection
-                    and alignment recovery under hidden row permutations.
+                    Information theory school project with Sarah Sayed on
+                    correlation detection and alignment recovery under hidden
+                    row permutations.
                   </p>
                   <span className="text-indigo-600 font-semibold">Read more -&gt;</span>
                 </div>
@@ -236,7 +237,7 @@ export default function Home() {
             Latest Posts
           </h2>
           <div className="space-y-12">
-            {/* Newest blog post */}
+            {/* Information theory blog post */}
             <article className="flex flex-col sm:flex-row items-start">
               <img
                 src={assetPath('assets/tamir_paper.png')}
@@ -250,19 +251,18 @@ export default function Home() {
                     Correlation Detection and Alignment Recovery in Gaussian Databases
                   </Link>
                 </h3>
-                <p className="text-sm text-gray-500 mb-3">
-                  Information theory school project
-                </p>
+                <p className="text-sm text-gray-500 mb-3">April 4, 2024</p>
                 <p className="text-gray-700 mb-2">
-                  Implementing ideas from Ran Tamir's work on correlation
-                  detection and hidden alignment recovery in Gaussian databases.
+                  School project with Sarah Sayed implementing ideas from Ran
+                  Tamir's work on correlation detection and hidden alignment
+                  recovery in Gaussian databases.
                 </p>
                 <Link to="/blog/information-theory-project" className="text-indigo-600 font-semibold">
                   Read more -&gt;
                 </Link>
               </div>
             </article>
-            {/* Second blog post */}
+            {/* GNN blog post */}
             <article className="flex flex-col sm:flex-row items-start">
               <img
                 src={assetPath('assets/medium/hero_gnn.webp')}

@@ -24,11 +24,12 @@ export default function Project4() {
           Project Overview
         </h2>
         <p className="text-lg leading-relaxed mb-4">
-          This school project implemented and studied algorithms from Ran
-          Tamir's paper on correlation detection and alignment recovery of
-          Gaussian databases. The problem combines hypothesis testing,
-          information theory, probability, and algorithmic recovery under an
-          unknown row permutation.
+          This school project, completed with my colleague Sarah Sayed,
+          implemented and studied algorithms from Ran Tamir's paper on
+          correlation detection and alignment recovery of Gaussian databases.
+          The problem combines hypothesis testing, information theory,
+          probability, and algorithmic recovery under an unknown row
+          permutation.
         </p>
         <p className="text-lg leading-relaxed mb-4">
           I explored how to generate independent and correlated Gaussian

@@ -14,9 +14,7 @@ export default function InformationTheoryProject() {
         title="Correlation Detection and Alignment Recovery in Gaussian Databases"
         compact
       >
-        <p className="text-sm text-gray-200 mt-3">
-          School project in information theory and statistical inference
-        </p>
+        <p className="text-sm text-gray-200 mt-3">Published April 4, 2024</p>
       </HeroSection>
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white text-gray-800">
@@ -24,12 +22,12 @@ export default function InformationTheoryProject() {
           Project Overview
         </h2>
         <p className="text-xl leading-9 mb-6">
-          As part of a school project, I studied the problem of correlation
-          detection and alignment recovery for Gaussian databases. The work was
-          based on Ran Tamir's paper, <em>On Correlation Detection and Alignment
-          Recovery of Gaussian Databases</em>, and focused on understanding how
-          information-theoretic ideas can be translated into implementable
-          statistical procedures.
+          As part of a school project completed with my colleague Sarah Sayed,
+          I studied the problem of correlation detection and alignment recovery
+          for Gaussian databases. The work was based on Ran Tamir's paper,{' '}
+          <em>On Correlation Detection and Alignment Recovery of Gaussian
+          Databases</em>, and focused on understanding how information-theoretic
+          ideas can be translated into implementable statistical procedures.
         </p>
         <p className="text-xl leading-9 mb-10">
           The central question is whether two databases are independent or

@@ -40,13 +40,11 @@ export default function Blog() {
                     Correlation Detection and Alignment Recovery in Gaussian Databases
                   </Link>
                 </h3>
-                <p className="text-sm font-medium text-gray-500 mb-4">
-                  Information theory school project
-                </p>
+                <p className="text-sm font-medium text-gray-500 mb-4">April 4, 2024</p>
                 <p className="text-lg leading-relaxed text-gray-700 mb-4">
-                  A school project implementing ideas from Ran Tamir's work on
-                  detecting correlation and recovering hidden alignments between
-                  Gaussian databases.
+                  A school project with Sarah Sayed implementing ideas from Ran
+                  Tamir's work on detecting correlation and recovering hidden
+                  alignments between Gaussian databases.
                 </p>
                 <Link to="/blog/information-theory-project" className="text-indigo-600 font-semibold">
                   Read more -&gt;
