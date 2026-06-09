@@ -29,6 +29,33 @@ export default function Blog() {
             {/* Post 1 */}
             <article className="flex flex-col sm:flex-row items-start gap-6">
               <img
+                src={assetPath('assets/tamir_paper.png')}
+                alt=""
+                loading="lazy"
+                className="flex-shrink-0 w-full sm:w-72 h-44 object-cover rounded-lg"
+              />
+              <div>
+                <h3 className="text-3xl sm:text-4xl font-extrabold leading-tight text-gray-900 mb-3">
+                  <Link to="/blog/information-theory-project" className="hover:text-indigo-600">
+                    Correlation Detection and Alignment Recovery in Gaussian Databases
+                  </Link>
+                </h3>
+                <p className="text-sm font-medium text-gray-500 mb-4">
+                  Information theory school project
+                </p>
+                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                  A school project implementing ideas from Ran Tamir's work on
+                  detecting correlation and recovering hidden alignments between
+                  Gaussian databases.
+                </p>
+                <Link to="/blog/information-theory-project" className="text-indigo-600 font-semibold">
+                  Read more -&gt;
+                </Link>
+              </div>
+            </article>
+            {/* Post 2 */}
+            <article className="flex flex-col sm:flex-row items-start gap-6">
+              <img
                 src={assetPath('assets/medium/hero_gnn.webp')}
                 alt=""
                 loading="lazy"
