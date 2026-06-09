@@ -30,7 +30,7 @@ export default function Work() {
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
               <Link to="/projects/project1" className="block">
                 <img
-                  src={assetPath('assets/hero.png')}
+                  src={assetPath('assets/mines.jpg')}
                   alt="PhD Student (CIFRE)"
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
@@ -51,7 +51,7 @@ export default function Work() {
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
               <Link to="/projects/project2" className="block">
                 <img
-                  src={assetPath('assets/work.png')}
+                  src={assetPath('assets/sorbonne-logo.png')}
                   alt="Associate Researcher"
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
