@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '../../components/HeroSection';
+import BlogEngagement from '../../components/BlogEngagement';
 import { assetPath } from '../../lib/assets';
 
 function Figure({ src, alt, caption }) {
@@ -189,6 +190,8 @@ export default function GnnArticle() {
             Read on Medium -&gt;
           </a>
         </div>
+
+        <BlogEngagement postSlug="gnn-article" />
       </article>
     </>
   );

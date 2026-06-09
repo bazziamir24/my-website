@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '../../components/HeroSection';
+import BlogEngagement from '../../components/BlogEngagement';
 import { assetPath } from '../../lib/assets';
 
 /**
@@ -153,6 +154,8 @@ export default function InformationTheoryProject() {
             Back to Blog
           </Link>
         </div>
+
+        <BlogEngagement postSlug="information-theory-project" />
       </article>
     </>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '../../components/HeroSection';
+import BlogEngagement from '../../components/BlogEngagement';
 import { assetPath } from '../../lib/assets';
 
 /**
@@ -238,6 +239,8 @@ Arm 6: choose the best value-per-cost case`}</code>
             Back to Blog
           </Link>
         </div>
+
+        <BlogEngagement postSlug="small-rl-project" />
       </article>
     </>
   );
