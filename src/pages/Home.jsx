@@ -240,7 +240,7 @@ export default function Home() {
             {/* Small RL blog post */}
             <article className="flex flex-col sm:flex-row items-start">
               <img
-                src={assetPath('assets/01_runtime_distribution.png')}
+                src={assetPath('assets/normal_1.gif')}
                 alt=""
                 loading="lazy"
                 className="flex-shrink-0 w-full sm:w-64 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-6"

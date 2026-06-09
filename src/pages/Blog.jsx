@@ -29,7 +29,7 @@ export default function Blog() {
             {/* Post 1 */}
             <article className="flex flex-col sm:flex-row items-start gap-6">
               <img
-                src={assetPath('assets/01_runtime_distribution.png')}
+                src={assetPath('assets/normal_1.gif')}
                 alt=""
                 loading="lazy"
                 className="flex-shrink-0 w-full sm:w-72 h-44 object-cover rounded-lg"
