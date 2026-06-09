@@ -71,7 +71,7 @@ export default function Work() {
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
               <Link to="/projects/metalore" className="block">
                 <img
-                  src={assetPath('assets/work.png')}
+                  src={assetPath('assets/projects/metalore-demo.gif')}
                   alt="MetaLore reinforcement learning project"
                   className="w-full h-48 object-cover rounded-t-lg"
                 />

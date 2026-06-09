@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '../../components/HeroSection';
+import { assetPath } from '../../lib/assets';
 
 /**
  * Project page: MetaLore.
@@ -10,7 +11,7 @@ export default function Project3() {
     <>
       {/* Hero banner */}
       <HeroSection
-        image="assets/work.png"
+        image="assets/projects/metalore-demo.gif"
         title="MetaLore"
       >
         <p className="text-lg sm:text-xl max-w-3xl mx-auto">
@@ -42,6 +43,19 @@ export default function Project3() {
           balancing synchronization freshness, end-to-end latency, and
           throughput.
         </p>
+
+        <figure className="my-10">
+          <img
+            src={assetPath('assets/projects/metalore-demo.gif')}
+            alt="MetaLore reinforcement learning environment demonstration"
+            loading="lazy"
+            className="w-full rounded-xl shadow-sm ring-1 ring-gray-200"
+          />
+          <figcaption className="mt-3 text-center text-sm text-gray-500">
+            MetaLore simulation view for reinforcement learning based resource
+            allocation.
+          </figcaption>
+        </figure>
 
         <h2 className="text-3xl font-semibold text-gray-800 mt-10 mb-6">
           Key Contributions
