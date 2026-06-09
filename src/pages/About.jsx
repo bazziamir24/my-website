@@ -71,6 +71,14 @@ export default function About() {
                   LinkedIn
                 </a>
                 <a
+                  href="https://scholar.google.com/citations?user=xizjTsgAAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-700 text-white hover:bg-emerald-800"
+                >
+                  Google Scholar
+                </a>
+                <a
                   href="mailto:bazziamir@outlook.com?subject=Hello%20Amir"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500"
                 >

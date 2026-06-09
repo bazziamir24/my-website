@@ -56,6 +56,14 @@ export default function Contact() {
             >
               GitHub
             </a>
+            <a
+              href="https://scholar.google.com/citations?user=xizjTsgAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-emerald-700 text-white rounded-lg shadow hover:bg-emerald-800 transition"
+            >
+              Google Scholar
+            </a>
           </div>
         </div>
       </main>

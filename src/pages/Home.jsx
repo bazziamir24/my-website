@@ -76,6 +76,14 @@ export default function Home() {
                   LinkedIn
                 </a>
                 <a
+                  href="https://scholar.google.com/citations?user=xizjTsgAAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-emerald-700 text-white rounded-lg shadow hover:bg-emerald-800 transition"
+                >
+                  Google Scholar
+                </a>
+                <a
                   href="mailto:bazziamir@outlook.com?subject=Hello%20Amir"
                   className="px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
                 >
